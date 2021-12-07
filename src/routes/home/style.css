@@ -1,0 +1,27 @@
+.home {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: violet;
+}
+
+.home input, button {
+	outline: none;
+	border: none;
+	padding: 16px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.home button {
+	margin-top: 34px;
+	background: rgb(9, 70, 155);
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.home button:active{
+	box-shadow: none;
+}
