@@ -19,7 +19,7 @@ const Home = () => {
     const json = await r.json();
 	console.log(json);
 
-    setShortLink(`/${json.shortURL}`);}
+    setShortLink(`https://zolt.ml/${json.shortURL}`);}
 	else{
 		location.reload();
 	}
