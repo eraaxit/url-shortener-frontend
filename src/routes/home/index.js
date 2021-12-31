@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks";
 import style from "./style.css";
-
+const API_URL = "https://eraaxit-url-shortner.herokuapp.com"
 const Home = () => {
   const [link, setLink] = useState("");
   const [shortLink, setShortLink] = useState("");
@@ -10,7 +10,7 @@ const Home = () => {
     let data = {
       longURL: link,
     };
-    const r = await fetch("http://localhost:5000/api/", {
+    const r = await fetch(`${API_URL}/api/`, {
       //the api url needs to go in env variables
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -19,7 +19,7 @@ const Home = () => {
     const json = await r.json();
 	console.log(json);
 
-    setShortLink(`http://localhost:8080/${json.shortURL}`);}
+    setShortLink(`/${json.shortURL}`);}
 	else{
 		location.reload();
 	}
