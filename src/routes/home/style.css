@@ -1,27 +1,59 @@
 .home {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	background: violet;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: violet;
+}
+input {
+  padding: 8px 8px 8px 0px;
+  border-radius: 2px;
+  width: 300px;
 }
 
-.home input, button {
-	outline: none;
-	border: none;
-	padding: 16px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	background: rgba(255, 255, 255, 0.9);
+.home input,
+button {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
 }
 
-.home button {
-	margin-top: 34px;
-	background: rgb(9, 70, 155);
-	color: white;
-	text-transform: uppercase;
-	font-weight: bold;
+.create_button {
+  margin-top: 34px;
+  background: rgb(9, 70, 155);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
 }
-.home button:active{
-	box-shadow: none;
+.create_button:active {
+  background-color: #050a33;
+  transform: translateY(2px);
+}
+.home strong {
+  padding-right: 10px;
+}
+
+.copy_button {
+  background: rgb(161, 15, 15);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 3px;
+}
+.copy_button:active {
+  background-color: #ff0000;
+  transform: translateY(1px);
+}
+.short_link {
+  background-color: white;
+  margin: 30px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.long_link {
+  background-color: white;
+  padding-left: 8px;
+  border-radius: 2px;
 }
